@@ -61,8 +61,8 @@ a {text-decoration: none; cursor: pointer;}
     border-radius: 1px;
 }
 
-.banner{
-    width: auto;
+.banner__img{
+    width: 21em;
 }
 /* --------------= Mobile View (Samsung S7 - S10)=-------------- */
 @media screen and (max-width: 360px){

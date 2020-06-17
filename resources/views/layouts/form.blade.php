@@ -33,6 +33,9 @@
         <a href=""></a>
     </div>
 </div>
+<div class="hero">
+    @yield('hero_content')
+</div>
 <div class="wrapper">
     <div class="row">
         <div class="container">
