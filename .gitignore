@@ -14,3 +14,4 @@ yarn-error.log
 .idea
 /public
 /config
+config/database.php
