@@ -9,6 +9,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collection.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mobile-nav.css') }}">
     <script src="{{ asset('js/mobile_nav.js') }}"></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
     @yield('hero_content')
 </div>
 <div class="wrapper">
-    <div class="row">
+    <div class="row column">
         <div class="container">
             <div class="banner">
                 @section('form_banner')

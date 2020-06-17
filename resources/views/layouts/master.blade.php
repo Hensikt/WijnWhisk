@@ -9,6 +9,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collection.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mobile-nav.css') }}">
     <script src="{{ asset('js/mobile_nav.js') }}"></script>
 </head>
 <body>

@@ -24,3 +24,4 @@ use Illuminate\Support\Facades\Route;
 
 // Forms
     Route::get('/login', 'FormsController@login');
+    Route::get('/register', 'FormsController@register');

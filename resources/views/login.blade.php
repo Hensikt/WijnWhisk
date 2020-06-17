@@ -12,6 +12,6 @@
         <label for=""><input placeholder="Username" type="text"></label>
         <label for=""><input placeholder="Password" type="text"></label>
         <a href="">FORGOTTEN PASSWORD</a>
-        <button>Sign up</button>
+        <button>Sign in</button>
     </form>
 @endsection
