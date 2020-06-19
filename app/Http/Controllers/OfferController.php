@@ -9,6 +9,10 @@ class OfferController extends Controller
     public function home(){
         return view('welcome');
     }
+
+    public function how(){
+        return view('how');
+    }
 }
 
 

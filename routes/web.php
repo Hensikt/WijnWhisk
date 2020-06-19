@@ -14,14 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Collectie pagina
-    Route::get('collection/Yamazaki',   'CollectionController@yamazaki');
-    Route::get('collection/Chateau',    'CollectionController@cheteau');
-    Route::get('collection/Nikka',      'CollectionController@nikka');
-    Route::get('collection/French Mix', 'CollectionController@frenchMix');
+    Route::get('collection/Yamazaki', 'CollectionController@yamazaki');
+    Route::get('collection/Chateau' , 'CollectionController@cheteau');
+    Route::get('collection/Nikka'   , 'CollectionController@nikka');
+    Route::get('collection/French'  , 'CollectionController@frenchMix');
     
 // Abbonomenten
-    Route::get('/', 'OfferController@home');
+    Route::get('/'                  , 'OfferController@home');
+    Route::get('/how'               , 'OfferController@how');
+    Route::get('/summary/Yamazaki'  , 'SummaryController@yamazaki');
+    Route::get('/summary/Chateau'   , 'SummaryController@chateau');
 
 // Forms
-    Route::get('/login', 'FormsController@login');
-    Route::get('/register', 'FormsController@register');
+    Route::get('/login'             , 'FormsController@login');
+    Route::get('/register'          , 'FormsController@register');

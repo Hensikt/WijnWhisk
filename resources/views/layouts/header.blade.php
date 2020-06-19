@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/collection.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mobile-nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/collection.css') }}">
     <script src="{{ asset('js/mobile_nav.js') }}"></script>
 </head>
 <body>
@@ -29,32 +28,8 @@
     <a class="close" onclick="closeNav()">&times;</a>
     <div class="overlay__content">
         <a href="/">Overlay</a>
-        <a href="/">Collection</a>
+        <a href="/">Collections</a>
         <a href=""></a>
         <a href=""></a>
     </div>
 </div>
-<div class="hero">
-    @yield('hero_content')
-</div>
-<div class="wrapper">
-    <div class="row column">
-        <div class="container">
-            <div class="banner">
-                @section('form_banner')
-                @show
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="container__form">
-                @section('form')
-
-                @show
-            </div>
-        </div>
-    </div>
-</div>
-<script src="{{ asset('js/localstorage.js') }}"></script>
-</body>
-</html>
