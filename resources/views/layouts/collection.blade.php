@@ -13,7 +13,7 @@
 </head>
 <body>
     <header id="header">
-        <a href="<?php echo url('/')?>"><h1>Wijn<span>Whisk</span></h1></a>
+        <a href="<?php echo url('/')?>"><h1 class="header_a">Wijn<span>Whisk</span></h1></a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="/">Overlay</a></li>
@@ -58,37 +58,37 @@
             <div class="container">
                 <div class="information__carousel--selector">
                     @section('collection_carousel-selector')
-                        <span class="text" onclick="currentSlide(1)">Distiller's Reserve</span>
-                        <span class="text" onclick="currentSlide(2)">12 years</span>
-                        <span class="text" onclick="currentSlide(3)">18 years</span>
-                        <span class="text" onclick="currentSlide(4)">25 years</span>
+                        <span class="text" onclick="currentSlide(1)">15 cl |</span>
+                        <span class="text" onclick="currentSlide(2)">20 cl |</span>
+                        <span class="text" onclick="currentSlide(3)">25 cl |</span>
+                        <span class="text" onclick="currentSlide(4)">30 cl  </span>
                     @show
                 </div>
 
                 <div class="information__carousel--container">
                     @section('collection_carousel')
-                        <div class="carousel--slide fade">
+                        <div class="carousel--slide fade" style="display: block;">
                             <div class="carousel--number">1 / 4</div>
                             <img src="https://via.placeholder.com/360x500" alt="">
-                            <div class="carousel--text">Caption Text</div>
+                            <div class="carousel--text">Test</div>
                         </div>
 
                         <div class="carousel--slide fade">
                             <div class="carousel--number">2 / 4</div>
                                 <img src="https://via.placeholder.com/360x500" alt="">
-                            <div class="carousel--text">Caption Two</div>
+                            <div class="carousel--text">Klein</div>
                         </div>
 
                         <div class="carousel--slide fade">
                             <div class="carousel--number">3 / 4</div>
                             <img src="https://via.placeholder.com/360x500" alt="">
-                            <div class="carousel--text">Caption Three</div>
+                            <div class="carousel--text">Middelgroot</div>
                         </div>
 
                         <div class="carousel--slide fade">
                             <div class="carousel--number">4 / 4</div>
                             <img src="https://via.placeholder.com/360x500" alt="">
-                            <div class="carousel--text">Caption Four</div>
+                            <div class="carousel--text">Groot</div>
                         </div>
                     @show
                 </div>

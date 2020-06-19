@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
     
 // Abbonomenten
     Route::get('/'                  , 'OfferController@home');
-    Route::get('/how'               , 'OfferController@how');
+    Route::get('/faq'               , 'OfferController@how');
     Route::get('/summary'           , 'SummaryController@summary');
     Route::get('/summary/Yamazaki'  , 'SummaryController@yamazaki');
     Route::get('/summary/Chateau'   , 'SummaryController@chateau');

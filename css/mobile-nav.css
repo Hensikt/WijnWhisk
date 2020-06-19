@@ -18,6 +18,16 @@ h1, h2, h3, h4, h5, h6, p, a, li{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+.header_a{
+    color: var(--main-white);
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -ms-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 body {
@@ -27,7 +37,7 @@ body {
     padding: 0;
 }
 
-li, a {
+.nav__links li a {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 16px;
@@ -131,6 +141,7 @@ h1:hover, span:hover {
     }
     .menu {
         display: inherit;
+        color: white;
     }
 }
 
@@ -141,5 +152,6 @@ h1:hover, span:hover {
 
     .overlay a {
         font-size: 1em;
+        color: white;
     }
 }

@@ -29,32 +29,25 @@
 
 
 @section('collection_carousel-selector')
-    <span class="text" onclick="currentSlide(1)">Reserve |</span>
-    <span class="text" onclick="currentSlide(2)">12 years |</span>
-    <span class="text" onclick="currentSlide(3)">18 years |</span>
-    <span class="text" onclick="currentSlide(4)">25 years</span>
+    <span class="text" onclick="currentSlide(1)">12 years |</span>
+    <span class="text" onclick="currentSlide(2)">18 years |</span>
+    <span class="text" onclick="currentSlide(3)">25 years</span>
 @endsection
 @section('collection_carousel')
-    <div class="carousel--slide fade">
-        <div class="carousel--number">1 / 4</div>
-        <img src="{{ asset('css/Images/product-yamazaki-1.png') }}" alt="">
-        <div class="carousel--text">Distiller's Waste</div>
-    </div>
-
-    <div class="carousel--slide fade">
-        <div class="carousel--number">2 / 4</div>
+    <div class="carousel--slide fade" style="display: block;">
+        <div class="carousel--number">1 / 3</div>
         <img src="{{ asset('css/Images/product-yamazaki-1.png') }}" alt="">
         <div class="carousel--text">12 Years</div>
     </div>
 
     <div class="carousel--slide fade">
-        <div class="carousel--number">3 / 4</div>
+        <div class="carousel--number">2 / 3</div>
         <img src="{{ asset('css/Images/product-yamazaki-2.png') }}" alt="">
         <div class="carousel--text">18 Years</div>
     </div>
 
     <div class="carousel--slide fade">
-        <div class="carousel--number">4 / 4</div>
+        <div class="carousel--number">3 / 3</div>
         <img src="{{ asset('css/Images/product-yamazaki-3.png') }}" alt="">
         <div class="carousel--text">25 Years</div>
     </div>
@@ -62,7 +55,7 @@
 
 @section('collection_desc')
     <h5>Select your Size:</h5>
-    <a class="info__link" href="/summary">More info about</a>
+    <a class="info__link" href="/faq">More info about</a>
 @endsection
 
 @section('collection_extra')

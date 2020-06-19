@@ -7,14 +7,16 @@ function store() {
 }
 
 function check() {
+    alert("hsi");
     var storedName = localStorage.getItem('uname');
     var storedPw   = localStorage.getItem('pass');
-
+    console.log(storedName);
+    console.log(storedPw);
     var userName = document.getElementById('userName');
     var userPw   = document.getElementById('userPw');
 
     if (userName.value == storedName && userPw.value == storedPw){
-        alert("Welcome")
+        alert("You are logged in");
     } else {
         alert("ERROR");
     }

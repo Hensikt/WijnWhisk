@@ -34,7 +34,8 @@ html, body {
 .container, .container-master {
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     text-align: left;
     flex-basis: 100%;
@@ -43,9 +44,9 @@ html, body {
 
 .row, .row-master{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -58,7 +59,6 @@ html, body {
 }
 
 .wrapper{
-    margin: 15px;
     background-color: #F6F6F6;
 }
 
@@ -94,6 +94,7 @@ html, body {
     font-size: 2em;
     color: #000;
     margin: 0;
+    padding-top: .5em ;
 }
 
 .information__subtitle{
@@ -138,15 +139,16 @@ html, body {
     cursor: pointer;
     font-size: .8em;
     padding: .6em;
-    -webkit-transition: 0.6s ease;
-    -moz-transition: 0.6s ease;
-    -ms-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    transition: 0.6s ease;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .selector:hover{
     background-color: var(--main-gold);
+    color: var(--main-white);
 }
 
 .info__link{
@@ -157,10 +159,19 @@ html, body {
 
 .checkout{
     width: 100%;
-    background-color: var(--main-gold);
-    color: #fff;
+    background-color: var(--main-white);
     padding: .2em;
     font-size: 1.2em;
+    border: 1px solid black;
+}
+.checkout:hover{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: var(--main-gold);
+    color: var(--main-white);
 }
 
 /* ----------= Collection class CSS =--------- */
@@ -248,7 +259,6 @@ html, body {
 
 .active, .text:hover{
     color: var(--main-gold);
-    background-color: #fcfcfc;
 }
 
   /* ---= Fading animation =--- */
@@ -282,14 +292,18 @@ html, body {
     /* -----------= General CSS =----------- */
     .row{
         width: 70%;
+        flex-direction: row;
     }
+
     .row-master{
         width: 90%;
     }
+
     .container-master{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero{

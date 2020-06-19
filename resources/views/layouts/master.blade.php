@@ -14,7 +14,7 @@
 </head>
 <body>
 <header id="header">
-    <a href="<?php echo url('/')?>"><h1>Wijn<span>Whisk</span></h1></a>
+    <a href="<?php echo url('/')?>"><h1 class="header_a">Wijn<span>Whisk</span></h1></a>
     <nav>
         <ul class="nav__links">
             <li><a href="/">Overlay</a></li>

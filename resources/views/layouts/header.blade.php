@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="{{ asset('css/mobile-nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/collection.css') }}">
     <script src="{{ asset('js/mobile_nav.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
 </head>
 <body>
 <header id="header">
-    <a href="<?php echo url('/')?>"><h1>Wijn<span>Whisk</span></h1></a>
+    <a href="<?php echo url('/')?>"><h1 class="header_a">Wijn<span>Whisk</span></h1></a>
     <nav>
         <ul class="nav__links">
             <li><a href="/">Overlay</a></li>
@@ -33,3 +34,8 @@
         <a href=""></a>
     </div>
 </div>
+<div class="hero">
+    @yield('hero_content')
+</div>
+@section('content')
+@show
