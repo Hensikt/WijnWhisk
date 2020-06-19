@@ -63,7 +63,7 @@ header {
 }
 
 h1:hover, span:hover {
-    color: var(--main-blue);
+    color: #BC9063;
     transition: all .3s ease 0s;
 }
 
@@ -81,7 +81,7 @@ h1:hover, span:hover {
 }
 
 .nav__links li a:hover {
-    color: var(--main-blue);
+    color: #BC9063;
 }
 
 .menu {

@@ -34,12 +34,12 @@
         <a href=""></a>
     </div>
 </div>
-<div class="hero">
-    @yield('hero_content')
-</div>
-<div class="wrapper">
-    <div class="row column">
-        <div class="container">
+{{--<div class="hero">--}}
+{{--    @yield('hero_content')--}}
+{{--</div>--}}
+<div class="wrapper mob">
+    <div class="row column login_stretch">
+        <div class="container login_stretch">
             <div class="banner">
                 @section('form_banner')
                 @show

@@ -1,12 +1,5 @@
 /* --------------= Mobile View =-------------- */
-   /* -----------= General CSS =----------- */
-
-
-/* -----------= Testing classes CSS =----------- */
-
-/* -----------= General classes CSS =----------- */
-
-/* ----------= Collection class CSS =--------- */
+/* Box styling */
 .collection_box:hover {
     cursor: pointer;
 }
@@ -36,24 +29,34 @@
 
 .collection_p{
     color: #000;
+    padding-bottom: .4rem;
 }
 
 .banner__img{
     width: 21em;
 }
 
+/* Info button styling */
+.collection_read {
+    color: black;
+    text-align: center;
+    padding: .3rem .5rem;
+    border-radius: .25rem;
+    border: solid 1px black;
+}
+.collection_read:hover {
+    background-color: #BC9063;
+    color: white;
+    transition: .3s;
+}
+
 /* --------------= Desktop View =-------------- */
 @media only screen and (min-width: 1200px){
-    /* -----------= General CSS =----------- */
-
-    /* -----------= Testing classes CSS =----------- */
-
-    /* -----------= General classes CSS =----------- */
     .container {
         width: 90%;
         margin: auto;
     }
-
-    /* ----------= Collection class CSS =--------- */
-
+    .collection_read {
+        width: 40%;
+    }
 }

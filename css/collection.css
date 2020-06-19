@@ -35,7 +35,7 @@ html, body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     width: 90%;
     text-align: left;
     flex-basis: 100%;
@@ -88,6 +88,7 @@ html, body {
 
 .information__desc{
      margin: 0;
+    text-align: left;
 }
 
 .information__title {
@@ -177,6 +178,7 @@ html, body {
 /* ----------= Collection class CSS =--------- */
 .information__subtitle {
     margin: 0;
+    padding-bottom: 1em;
 }
 
 /* ----------= Carousel class CSS =--------- */
@@ -287,6 +289,108 @@ html, body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+
+/* Login styling */
+.form_img {
+    background-image: url(Images/stock-whiskey.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+
+.login_stretch {
+    width: 100%;
+}
+
+form {
+    display: block;
+    width: 300px;
+}
+form h2 {
+    padding-left: 30px;
+}
+
+form
+input[type=text], input[type=submit], input[type=password] {
+    padding: 10px;
+    margin:10px 30px;
+    border: 2px solid #eee;
+    border-radius:10px;
+}
+
+.container__form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.checkout_wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.checkout_h2 {
+    margin-bottom: 1em;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: #ddd;
+    font-family: sans-serif;
+}
+
+.container__margin {
+    margin: 5px 0 20px 0;
+}
+
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+.table-filter {
+    margin-bottom: 5px;
+}
+
+table {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    color: #ffffff;
+    background: var(--main-gold);
+    font-weight: 700;
+}
+
+tr {
+    background: #fff;
+}
+
+tr:hover {
+    background: #f4f4f4;
+}
+
+th,
+td {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    word-wrap: break-word;
+    border-bottom: 1px solid #ccc;
+}
+
+.table_img {
+    width: 50px;
+    height: auto;
+}
+
+.login_stretch {
+    width: 100%;
+}
+.mob {
+    height: 100vh;
+}
+
 /* --------------= Desktop View (Computer)=-------------- */
 @media only screen and (min-width: 1200px) {
     /* -----------= General CSS =----------- */
@@ -321,7 +425,7 @@ html, body {
     .information__bigdesc{
         width: 90%;
     }
-    /* -----------= Testing classes CSS =----------- */
+
     .tablet--samsung {
         display: none;
     }
@@ -332,8 +436,11 @@ html, body {
         margin: auto;
     }
 
-    /* -----------= General classes CSS =----------- */
-
-    /* ----------= Collection class CSS =--------- */
+    .form_img {
+        height: 100vh;
+    }
+    .login_stretch {
+        width: 100%;
+    }
 }
 
