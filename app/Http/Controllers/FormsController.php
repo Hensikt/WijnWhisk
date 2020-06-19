@@ -13,4 +13,8 @@ class FormsController
     public function register(){
         return view('register');
     }
+
+    public function account(){
+        return view('account');
+    }
 }

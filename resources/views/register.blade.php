@@ -13,6 +13,6 @@
         <input id="name"     type="text"     placeholder="Username">
         <input id="pw"       type="password" placeholder="Password">
         <input id="Email"    type="email"    placeholder="E-Mail"   value="a"/>
-        <input class="button register__button" value="Get Account" type="submit" onclick="store()"/>
+        <input id="rgstr_btn" class="button register__button" value="Get Account" type="submit" onclick="store()"/>
     </form>
 @endsection

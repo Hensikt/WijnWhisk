@@ -62,7 +62,7 @@
 
 @section('collection_desc')
     <h5>Select your Size:</h5>
-    <a class="info__link" href="#">More info about</a>
+    <a class="info__link" href="/summary">More info about</a>
 @endsection
 
 @section('collection_extra')
@@ -75,6 +75,8 @@
 @endsection
 
 @section('collection_proceed')
-    <button type="submit" class="checkout">Proceed to check out</button>
+    <form action="http://wijnwhisk.nl/collection/Yamazaki/checkout/">
+        <button type="submit" class="checkout">Proceed to check out</button>
+    </form>
 @endsection
 

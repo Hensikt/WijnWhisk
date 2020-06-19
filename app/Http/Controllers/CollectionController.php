@@ -22,6 +22,9 @@ class CollectionController extends Controller
         return view('chateau');
     }
 
+    public function yamazakiCheckout(){
+        return view('yamazakiCheckout');
+    }
 //    public function Something(){
 //        return view('');
 //    }
