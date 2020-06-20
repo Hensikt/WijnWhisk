@@ -21,8 +21,9 @@ h1, h2, h3, h4, h5, h6, p, a, li{
     text-decoration: none;
 }
 
-.header_a{
-    color: var(--main-white);
+.logo {
+    height: 40px;
+    fill: var(--main-white);
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -ms-transition: all .3s ease 0s;
@@ -62,9 +63,8 @@ header {
     z-index: 1;
 }
 
-h1:hover, span:hover {
-    color: #BC9063;
-    transition: all .3s ease 0s;
+.logo:hover {
+    fill: #BC9063;
 }
 
 .nav__links {
